@@ -1,6 +1,8 @@
 import requests
 import json
 import datetime
+import matplotlib
+matplotlib.use('Agg') 
 import matplotlib.pyplot as plt
 import numpy as np
 import os
@@ -70,4 +72,3 @@ plt.tight_layout()
 plt.savefig(image_filepath)
 print(f"Đã lưu ảnh biểu đồ vào file: {image_filepath}")
 
-plt.show()
